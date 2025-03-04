@@ -1,0 +1,9 @@
+kind: Kustomization
+namespace: kubernates-tutorial
+resources:
+  - mysql.yaml
+  - wordpress.yaml
+  - app-sealed-secret.yaml
+  - ingress.yaml
+generatorOptions:
+  disableNameSuffixHash: true
